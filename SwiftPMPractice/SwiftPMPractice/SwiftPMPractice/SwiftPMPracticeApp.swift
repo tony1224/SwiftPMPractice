@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import MyLibrary
+import MyAppPackage
 
 @main
 struct SwiftPMPracticeApp: App {
