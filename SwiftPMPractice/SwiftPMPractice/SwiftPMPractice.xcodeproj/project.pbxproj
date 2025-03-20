@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FBAD4BE52D8C62E80048E8AA /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FBAD4BE42D8C62E80048E8AA /* MyLibrary */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FBAD4BD12D8C61140048E8AA /* SwiftPMPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPMPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAD4BE52D8C62E80048E8AA /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				FBAD4BD32D8C61140048E8AA /* SwiftPMPractice */,
+				FBAD4BE32D8C62E80048E8AA /* Frameworks */,
 				FBAD4BD22D8C61140048E8AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,13 @@
 				FBAD4BD12D8C61140048E8AA /* SwiftPMPractice.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBAD4BE32D8C62E80048E8AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +78,7 @@
 			);
 			name = SwiftPMPractice;
 			packageProductDependencies = (
+				FBAD4BE42D8C62E80048E8AA /* MyLibrary */,
 			);
 			productName = SwiftPMPractice;
 			productReference = FBAD4BD12D8C61140048E8AA /* SwiftPMPractice.app */;
@@ -335,6 +349,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBAD4BE42D8C62E80048E8AA /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBAD4BC92D8C61140048E8AA /* Project object */;
 }
