@@ -5,21 +5,18 @@ import PackageDescription
 
 let package = Package(
     name: "MyAppPackage",
+    // SwiftPM上でSwiftUIを利用するために必要
     platforms: [
         .iOS(.v15)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "MyAppPackage",
-            targets: ["MyAppPackage"]),
+        .library(name: "MyAppPackage", targets: ["MyAppPackage"]),
     ],
+    // OSSを利用する。productsの真下に指定が必要
     dependencies: [
         .package(url: "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git", from: "1.4.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(name: "MyAppPackage", dependencies: ["SwiftPrettyPrint"]),
     ]
 )
