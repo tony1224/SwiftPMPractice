@@ -1,0 +1,5 @@
+*.xcuserstate
+DerivedData/
+Pods/
+*.xcworkspace
+*.xcodeproj/project.xcworkspace
