@@ -3,3 +3,13 @@ DerivedData/
 Pods/
 *.xcworkspace
 *.xcodeproj/project.xcworkspace
+
+# macOS のシステムファイルを無視
+.DS_Store
+
+# Xcode のビルドフォルダを無視
+xcuserdata/
+
+# Swift Package Manager のキャッシュを無視
+.swiftpm/
+.build/
