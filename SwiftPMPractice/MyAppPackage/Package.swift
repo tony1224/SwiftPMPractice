@@ -15,7 +15,7 @@ let package = Package(
     // OSSを利用する。productsの真下に指定が必要
     dependencies: [
         .package(url: "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git", from: "1.4.0"),
-        .package(url: "https://github.com/tony1224/SwiftUIWorkshop.git", from: "1.2.0"),
+        .package(url: "https://github.com/tony1224/SwiftUIWorkshop.git", from: "1.3.0"),
     ],
     targets: [
         .target(name: "MyAppPackage", dependencies: ["SwiftPrettyPrint", "SwiftUIWorkshop"]),
