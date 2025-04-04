@@ -17,8 +17,10 @@ let package = Package(
         .package(url: "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git", from: "1.4.0"),
         .package(url: "https://github.com/tony1224/SwiftUIWorkshop.git", from: "1.3.0"),
         .package(url: "https://github.com/tony1224/SwiftAPIClient.git", from: "1.0.4"),
+        .package(path: "../features/LoginUI"),
+        .package(path: "../features/SettingsUI")
     ],
     targets: [
-        .target(name: "MyAppPackage", dependencies: ["SwiftPrettyPrint", "SwiftUIWorkshop", "SwiftAPIClient"]),
+        .target(name: "MyAppPackage", dependencies: ["SwiftPrettyPrint", "SwiftUIWorkshop", "SwiftAPIClient", "LoginUI", "SettingsUI"]),
     ]
 )

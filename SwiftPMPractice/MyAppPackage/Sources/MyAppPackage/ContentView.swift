@@ -8,16 +8,59 @@
 import SwiftUI
 import SwiftPrettyPrint
 import SwiftUIWorkshop
+import LoginUI
+import SettingsUI
 
 public struct ContentView: View {
     public init() {}
     
     public var body: some View {
-        VStack {
-            Text("Hello, World!")
-                .prettyPrint(label: "🍎")
+        TabView {
+            SampleAView()
+                .tabItem {
+                    Label("Sample A", systemImage: "list.bullet")
+                }
+            SampleBView()
+                .tabItem {
+                    Label("Sample B", systemImage: "person")
+                }
+        }
+    }
+}
 
-            RollingText(currentText: "100", nextText: "1000", textHeight: 24, minWidth: 30, font: .systemFont(ofSize: 16))
+struct SampleAView: View {
+    @AppStorage("isLogin") private var isLogin: Bool = false
+
+    var body: some View {
+        VStack {
+            Text("Sample A View")
+            Button("ログアウト") {
+                isLogin = false
+            }
+            .padding()
+            .background(Color.green)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+        }
+    }
+}
+
+struct SampleBView: View {
+    @State private var isShowingSettings = false
+
+    var body: some View {
+        VStack {
+            Text("Sample B View")
+            Button("設定") {
+                isShowingSettings = true
+            }
+            .padding()
+            .background(Color.orange)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+            .fullScreenCover(isPresented: $isShowingSettings) {
+                SettingsView(isPresented: $isShowingSettings)
+            }
         }
     }
 }

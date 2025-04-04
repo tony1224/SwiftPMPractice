@@ -7,12 +7,20 @@
 
 import SwiftUI
 import MyAppPackage
+import LoginUI
 
 @main
 struct SwiftPMPracticeApp: App {
+    @AppStorage("isLogin") private var isLogin: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isLogin {
+                ContentView()
+            } else {
+                LoginView()
+            }
         }
     }
+
 }
