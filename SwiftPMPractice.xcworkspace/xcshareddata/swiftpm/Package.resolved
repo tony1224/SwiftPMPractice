@@ -1,0 +1,78 @@
+{
+  "originHash" : "541e82c7d2296e0eb35a7164efc81dd66048f344d03acf736759ab22090399f9",
+  "pins" : [
+    {
+      "identity" : "colorizeswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mtynior/ColorizeSwift.git",
+      "state" : {
+        "revision" : "4e7daa138510b77a3cce9f6a31a116f8536347dd",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "curry",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thoughtbot/Curry.git",
+      "state" : {
+        "revision" : "4331dd50bc1db007db664a23f32e6f3df93d4e1a",
+        "version" : "4.0.2"
+      }
+    },
+    {
+      "identity" : "flatten",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/YusukeHosonuma/Flatten.git",
+      "state" : {
+        "revision" : "5286148aa255f57863e0d7e2b827ca6b91677051",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "shlist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/YusukeHosonuma/SHList.git",
+      "state" : {
+        "revision" : "6c61f5382dd07a64d76bc8b7fad8cec0d8a4ff7a",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "swiftapiclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tony1224/SwiftAPIClient.git",
+      "state" : {
+        "revision" : "54a644077228779b857a5fb24f1c28c8a15b1e9b",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "swiftparamtest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/YusukeHosonuma/SwiftParamTest.git",
+      "state" : {
+        "revision" : "f513e1dbbdd86e2ca2b672537f4bcb4417f94c27",
+        "version" : "2.2.1"
+      }
+    },
+    {
+      "identity" : "swiftprettyprint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git",
+      "state" : {
+        "revision" : "1ad0d60150ae89c95846a736cb71cf322c8c8610",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "swiftuiworkshop",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tony1224/SwiftUIWorkshop.git",
+      "state" : {
+        "revision" : "5f8dc20cf3992d55aa140dad5fafa819234a7a6f",
+        "version" : "1.4.2"
+      }
+    }
+  ],
+  "version" : 3
+}
